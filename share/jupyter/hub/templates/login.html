@@ -16,15 +16,15 @@
   </a>
 </div>
 {% else %}
+
+凤凰教育大数据分析软件工具
 <form action="{{login_url}}?next={{next}}" method="post" role="form">
   <div class="auth-form-header">
-    Sign in
+    登入
   </div>
   <div class='auth-form-body'>
 
     <p id='insecure-login-warning' class='hidden'>
-    Warning: JupyterHub seems to be served over an unsecured HTTP connection.
-    We strongly recommend enabling HTTPS for JupyterHub.
     </p>
 
     {% if login_error %}
@@ -32,7 +32,7 @@
       {{login_error}}
     </p>
     {% endif %}
-    <label for="username_input">Username:</label>
+    <label for="username_input">用户名:</label>
     <input
       id="username_input"
       type="text"
@@ -44,7 +44,7 @@
       tabindex="1"
       autofocus="autofocus"
     />
-    <label for='password_input'>Password:</label>
+    <label for='password_input'>密码:</label>
     <input
       type="password"
       class="form-control"
@@ -57,7 +57,7 @@
       type="submit"
       id="login_submit"
       class='btn btn-jupyter'
-      value='Sign In'
+      value='登入'
       tabindex="3"
     />
   </div>
